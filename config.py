@@ -8,6 +8,8 @@ config_profile="DEFAULT"
 compartment_id = "<COMPARTMENT OCID>"
 # model id: to use default model, assign: None
 model_id = "<AI VISION MODEL OCID>"
+# feature type: "IMAGE_CLASSIFICATION" or "OBJECT_DETECTION" or "DOCUMENT_CLASSIFICATION" or "KEY_VALUE_DETECTION" or "LANGUAGE_CLASSIFICATION" or "TABLE_DETECTION" or "TEXT_DETECTION"
+feature_type = "IMAGE_CLASSIFICATION"
 
 # namespace of Object Storage location containing the images to be analyzed
 object_location_namespace_name="<OBJECT STORAGE NAMESPACE FOR INFERENCE OBJECTS>"
