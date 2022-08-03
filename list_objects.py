@@ -6,10 +6,10 @@ from config import *
 def main():
     if auth_method == "resource_principal":
         rps = oci.auth.signers.get_resource_principals_signer()
-        ai_vision_client = oci.object_storage.ObjectStorageClient(config={}, signer=rps)
+        object_storage_client = oci.object_storage.ObjectStorageClient(config={}, signer=rps)
     elif auth_method == "api_key":
         config = oci.config.from_file(config_file_path, config_profile)
-        ai_vision_client = oci.object_storage.ObjectStorageClient(config=config, retry_strategy=retry_strategy)
+        object_storage_client = oci.object_storage.ObjectStorageClient(config=config, retry_strategy=retry_strategy)
     else:
         print("Assign a value to auth_method in config.py: \"resource_princpal\" or \"api_key\".")
 
