@@ -31,7 +31,8 @@ def main():
             input_location=oci.ai_vision.models.ObjectListInlineInputLocation(
                 object_locations=object_locations),
             features=[oci.ai_vision.models.ImageClassificationFeature(
-                    feature_type="IMAGE_CLASSIFICATION")],
+                    feature_type="IMAGE_CLASSIFICATION",
+                    model_id=model_id)],
             output_location=oci.ai_vision.models.OutputLocation(
                 namespace_name=output_location_namespace_name,
                 bucket_name=output_location_bucket_name,

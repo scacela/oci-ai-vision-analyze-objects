@@ -6,7 +6,7 @@ config_file_path="~/.oci/config"
 config_profile="DEFAULT"
 # compartment id of create_image_job
 compartment_id = "<COMPARTMENT OCID>"
-# model id
+# model id: to use default model, assign: None
 model_id = "<AI VISION MODEL OCID>"
 
 # namespace of Object Storage location containing the images to be analyzed
