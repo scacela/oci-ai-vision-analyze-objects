@@ -19,7 +19,7 @@ object_location_prefix=""
 # namespace of Object Storage location where the image analysis will be generated
 output_location_namespace_name="<OBJECT STORAGE NAMESPACE FOR OUTPUT ANALYSIS>"
 # Object Storage bucket where the image analysis will be generated
-output_location_bucket_name="BUCKET FOR INFERENCE OBJECTS"
+output_location_bucket_name="BUCKET FOR OUTPUT ANALYSIS"
 # Prefix in bucket where image analysis will be generated
 output_location_prefix="Analysis/"
 
