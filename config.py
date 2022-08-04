@@ -14,16 +14,16 @@ feature_type = "IMAGE_CLASSIFICATION"
 # namespace of Object Storage location containing the images to be analyzed
 object_location_namespace_name="<OBJECT STORAGE NAMESPACE FOR INFERENCE OBJECTS>"
 # Object Storage bucket containing the images to be analyzed
-object_location_bucket_name="BUCKET FOR INFERENCE OBJECTS"
+object_location_bucket_name="<BUCKET NAME FOR INFERENCE OBJECTS>"
 # Prefix in bucket containing images to be analyzed
 object_location_prefix=""
 
 # namespace of Object Storage location where the image analysis will be generated
 output_location_namespace_name="<OBJECT STORAGE NAMESPACE FOR OUTPUT ANALYSIS>"
 # Object Storage bucket where the image analysis will be generated
-output_location_bucket_name="BUCKET FOR OUTPUT ANALYSIS"
+output_location_bucket_name="<BUCKET NAME FOR OUTPUT ANALYSIS>"
 # Prefix in bucket where image analysis will be generated
-output_location_prefix="Analysis/"
+output_location_prefix="Analysis"
 
 # Generate a zip file for all analyzed results in user-specified output location in object storage
 # set is_zip_output_enabled true to enable zip output feature
