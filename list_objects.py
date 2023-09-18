@@ -4,6 +4,7 @@ import json
 from config import *
 
 def main():
+    retry_strategy = oci.retry.DEFAULT_RETRY_STRATEGY
     if auth_method == "resource_principal":
         rps = oci.auth.signers.get_resource_principals_signer()
         object_storage_client = oci.object_storage.ObjectStorageClient(config={}, signer=rps)
